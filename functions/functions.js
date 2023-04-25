@@ -15,7 +15,7 @@ const pageSize = 10
     return new Response(JSON.stringify(articles), { 
         headers: { 
             'content-type': 'application/json',
-            'User-Agent': 'moja aplikacja'
+            'Access-Control-Allow-Origin': '*'
         } 
     });
 }
