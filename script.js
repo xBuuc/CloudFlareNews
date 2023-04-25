@@ -39,8 +39,7 @@ for (let i = 1; i <= 5; i++) {
               <a href="${url}"><dl>
                 <h1>${title}</h1>
                 <dd>${author}</dd>
-                <dt>${url}</dt>
-                <dd>${imageUrl}</dd>
+                <img src="${imageUrl}">
               </dl></a>
           `, "text/html").body.firstChild;
   
