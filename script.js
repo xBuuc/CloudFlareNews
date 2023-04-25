@@ -17,7 +17,11 @@ for (let i = 1; i <= 5; i++) {
       console.log(page);
   
       try {
-        const res = await fetch(`/functions?page=${page}`);
+        const res = await fetch(`/functions?page=${page}`, {
+            headers: {
+              'User-Agent': 'NazwaTwojejAplikacji'
+            }
+          });
         const body = await res.json();
         console.log(body);
   
