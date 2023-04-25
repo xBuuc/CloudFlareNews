@@ -20,10 +20,10 @@ for (let i = 1; i <= 5; i++) {
   
       const el = parser.parseFromString(`
         <dl>
-          <dt>${body.article.title}</dt>
-          <dd>${body.article.author}</dd>
-          <dt>${body.article.url}</dt>
-          <dd>${body.article.urlToImage}}</dd>
+          <dt>${body.articles.article.title}</dt>
+          <dd>${body.articles.article.author}</dd>
+          <dt>${body.articles.article.url}</dt>
+          <dd>${body.articles.article.urlToImage}}</dd>
         </dl>
       `, "text/html").body.firstChild;
 
