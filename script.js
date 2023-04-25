@@ -36,12 +36,12 @@ for (let i = 1; i <= 5; i++) {
           const imageUrl = article.urlToImage;
   
           const articleItem = parser.parseFromString(`
-              <dl a href="${url}">
+              <a href="${url}"><dl>
                 <h1>${title}</h1>
                 <dd>${author}</dd>
                 <dt>${url}</dt>
                 <dd>${imageUrl}</dd>
-              </dl>
+              </dl></a>
           `, "text/html").body.firstChild;
   
           articleList.appendChild(articleItem);
