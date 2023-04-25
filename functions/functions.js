@@ -1,8 +1,6 @@
 // const apiKey = '29cc4d159c8d4e638e806ec98bcc87bf'
 const pageSize = 10
 
-  getArticles();
-
   export async function onRequestGet({env, request}) {
 
     const apiKey = env.apiKey.replace(' ', '');
