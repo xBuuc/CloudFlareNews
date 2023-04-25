@@ -11,9 +11,9 @@ const pageSize = 10
 
     const url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=${pageSize}&page=${page}&apiKey=${apiKey}`;
     const res = await fetch(url);
-    const weather = await res.json();
+    const articles = await res.json();
 
-    return new Response(JSON.stringify(weather), { 
+    return new Response(JSON.stringify(articles), { 
         headers: { 
             'content-type': 'application/json' 
         } 
