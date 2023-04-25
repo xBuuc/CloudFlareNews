@@ -1,9 +1,8 @@
-// const apiKey = '29cc4d159c8d4e638e806ec98bcc87bf'
 const pageSize = 10
 
   export async function onRequestGet({env, request}) {
 
-    const key = env.apiKey.replace(' ', '');
+    const key = env.apiKey;
 
     const params = (new URL(request.url)).searchParams;
 
