@@ -36,8 +36,8 @@ for (let i = 1; i <= 5; i++) {
           const imageUrl = article.urlToImage;
   
           const articleItem = parser.parseFromString(`
-              <dl>
-                <dt>${title}</dt>
+              <dl a href="${url}">
+                <h1>${title}</h1>
                 <dd>${author}</dd>
                 <dt>${url}</dt>
                 <dd>${imageUrl}</dd>
