@@ -17,11 +17,12 @@ for (let i = 1; i <= 5; i++) {
       const res = await fetch(`/functions?page=${page}`);
       const body = await res.json();
       console.log(body);
-    
-      const title = body.articles[index].title;
-      const author = body.articles[index].author;
-      const url = body.articles[index].url;
-      const imageUrl = body.articles[index].urlToImage;
+  
+  
+      const title = body.articles.title;
+      const author = body.articles.author;
+      const url = body.articles.url;
+      const imageUrl = body.articles.urlToImage;
   
       const el = parser.parseFromString(`
         <dl>
