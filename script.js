@@ -9,6 +9,8 @@ for (let i = 1; i <= 5; i++) {
   const parser = new DOMParser();
   const buttons = document.getElementsByClassName('button');
   
+  console.log(buttons)
+
   Array.from(buttons).forEach(button => {
     button.addEventListener('click', async () => {
       const page = button.innerHTML;

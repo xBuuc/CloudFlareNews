@@ -9,7 +9,11 @@ const pageSize = 10
     const page = params.get('page');
 
     const url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=${pageSize}&page=${page}&apiKey=${key}`;
-    const res = await fetch(url);
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'nazwa-twojej-aplikacji'
+      }
+    });
     const articles = await res.json();
 
     return new Response(JSON.stringify(articles), { 
