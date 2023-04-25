@@ -19,7 +19,7 @@ for (let i = 1; i <= 5; i++) {
       try {
         const res = await fetch(`/functions?page=${page}`, {
             headers: {
-              'User-Agent': 'NazwaTwojejAplikacji'
+              'User-Agent': 'Napp'
             }
           });
         const body = await res.json();
