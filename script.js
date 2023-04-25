@@ -26,6 +26,8 @@ for (let i = 1; i <= 5; i++) {
           <dd>${body.article.urlToImage}}</dd>
         </dl>
       `, "text/html").body.firstChild;
+
+      buttons.after(el);
     });
   });
 
