@@ -37,8 +37,8 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%; /*bylo 300*/
-    width: 80%;  /*bylo 200*/
+    height: 300px; /*bylo 300*/
+    width: 200px;  /*bylo 200*/
     padding: 10px;
     margin: 10px;
     background-color: #fff;
