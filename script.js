@@ -38,7 +38,7 @@ for (let i = 1; i <= 5; i++) {
           const articleItem = parser.parseFromString(`
               <a href="${url}" target="_blank"><dl>
                 <h1>${title}</h1>
-                <dd>${author}</dd>
+                <dd>Author: ${author}</dd>
                 <img src="${imageUrl}">
               </dl></a>
           `, "text/html").body.firstChild;
