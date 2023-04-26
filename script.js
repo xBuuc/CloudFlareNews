@@ -6,10 +6,6 @@ for (let i = 1; i <= 5; i++) {
     });
   }
   
-window.addEventListener('load', ()=>{
-    page = 1;
-});
-
   const parser = new DOMParser();
   const buttons = document.getElementsByClassName('button');
   
