@@ -76,3 +76,7 @@ a {
     flex-wrap: wrap;
 }
   
+#buttonplacement{
+  width: 100%;
+  align-items: center;
+}
