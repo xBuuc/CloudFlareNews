@@ -21,6 +21,8 @@ body{
 #container{
     grid-column: 2/3;
     grid-row: 2;
+
+    position: relative;
 }
 
 #leftaside{
@@ -81,4 +83,9 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  margin: 10px;
 }
