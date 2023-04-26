@@ -22,6 +22,14 @@ body{
     grid-row: 2;
 }
 
+dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
 #leftaside{
     grid-column: 3/4;
     grid-row: 2;
