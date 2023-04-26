@@ -35,7 +35,7 @@ dl {
     text-overflow: clip;
 }
 
-dl > img {
+dl > img, h1, dd {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
