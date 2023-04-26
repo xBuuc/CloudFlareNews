@@ -28,7 +28,12 @@ dl {
     justify-content: center;
     align-items: center;
     height: 300px;
-  }
+}
+
+dl > img {
+    width: 10%;
+    height: 10%;
+}
 
 #leftaside{
     grid-column: 3/4;
