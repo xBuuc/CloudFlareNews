@@ -52,7 +52,7 @@ a {
   width: calc(100% - 20px); 
   padding: 10px;
   margin: 10px;
-  background-color: #fff;
+  background-color: #e3e3e3;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
