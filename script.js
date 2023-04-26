@@ -1,4 +1,4 @@
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= 4; i++) {
     const button = document.getElementById('s' + i);
     button.addEventListener('click', function() {
       const page = button.innerHTML;
