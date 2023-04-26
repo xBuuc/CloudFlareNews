@@ -31,9 +31,8 @@ dl {
     width: 90%;
     height: 300px;
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    text-overflow: clip;
 }
 
 dl > img {
