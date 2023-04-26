@@ -28,7 +28,7 @@ dl {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 90%;
     height: 300px;
 
     white-space: nowrap;
