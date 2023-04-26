@@ -55,4 +55,40 @@ for (let i = 1; i <= 5; i++) {
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    try {
+      const res = await fetch(`/functions?page=1`);
+      const body = await res.json();
+      console.log(body);
+  
+      const articles = body.articles;
+  
+      const articleList = parser.parseFromString('<ul></ul>', "text/html").body.firstChild;
+  
+      articles.forEach(article => {
+        const title = article.title;
+        const author = article.author;
+        const url = article.url;
+        const imageUrl = article.urlToImage;
+  
+        const articleItem = parser.parseFromString(`
+        <a href="${url}" target="_blank"><dl class="article-item">
+        <h1>${title}</h1>
+        <dd>Author: ${author}</dd>
+        <img src="${imageUrl}">
+      </dl></a>
+        `, "text/html").body.firstChild;
+  
+        articleList.appendChild(articleItem);
+      });
+  
+      const existingArticleList = document.getElementById('article-list');
+      existingArticleList.replaceWith(articleList);
+      articleList.id = 'article-list';
+  
+    } catch (error) {
+      console.error(error);
+    }
+  });
   
